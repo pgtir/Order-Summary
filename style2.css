@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(225, 100%, 94%);
+}
+
+/* css for card container  */
+
+.container {
+    width: 100wv;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.summary-card {
+    width: 88%;
+    max-width: 450px;
+    margin-top: 7rem;
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px hsla(245, 75%, 52%, 0.1), 15px 15px 30px hsla(245, 75%, 52%, 0.1);
+
+}
+
+ .hero-image {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.info {
+    padding: 1.6rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.plan-summary {
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+    border-radius: 1.5rem;
+    margin: 0.8rem 0;
+    padding: 1.6rem 1.2rem;
+}
+
+.col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.plan-info {
+    margin-left: 2rem;
+}
+
+
+.plan {
+    color: hsl(223, 47%, 23%);
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.price {
+    color: hsl(224, 23%, 55%);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.col-2 a {
+    color: hsl(245, 75%, 52%);
+    font-size: 1.3rem;
+    font-weight: 700;    
+}
+
+.col-2 a:hover {
+    text-decoration: none;
+    opacity: 0.75;
+
+}
+
+.btn {
+    /* display: block; */
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    text-decoration: none;
+    padding: 1.5rem;
+    margin: 1.4rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 10px 10px 20px hsla(245, 75%, 52%, 0.15), 15px 15px 30px hsla(245, 75%, 52%, 0.15);
+}
+
+a.btn:hover {
+    opacity: .7;
+}
+
+a.cancel {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: .8rem;
+}
+
+a.cancel:hover {
+    color: hsl(223, 47%, 23%);
+
+}
+
+/* media-query for screen size > 1440 px  */
+@media screen and (min-width: 1440px){
+    body {
+        background-image: url(pattern-background-desktop.svg);
+        
+    }
+
+    .container {
+        align-items: center;
+    }
+
+    .summary-card {
+        margin-top: unset;
+    }
+
+    .wrapper {
+        padding: 4rem 4.5rem;
+    }
+
+    .title {
+        font-size: 2.8rem;
+    }
+
+    .info {
+        font-size: 1.6rem;
+        line-height: 2.55rem;
+    }
+
+    .plan-summary {
+        padding: 2.2rem 2.4rem;
+        margin: 0.4rem;
+    }
+
+   
+
+    .plan-info {
+        margin-left: 2.2rem;
+    }
+
+    .price {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        margin: 3rem 0 2.4rem 0;
+    }
+     
+ }
